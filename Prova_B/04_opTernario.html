@@ -12,10 +12,14 @@
     */
 
     //Entrada
-
+    const preco = prompt(`Qual o preço da casa que deseja comprar?`).trim();
+    const anos = prompt(`Informe a quantidade de anos que deseja financiar.`).trim();
 
     //Processamento
-
+    let mensagemFinal = (anos = 1) ? `Não terá diferença no preço.`
+    : (anos > 1 && anos <= 12) ? `O valor ficará de ${preco * 1.15} reais.`
+    : (anos > 12 && anos <= 24) ? `O valor ficará de ${preco * 1.30} reais.`
+    : (anos > 24) `Não é possível financiar.`
     
     //Saída
 

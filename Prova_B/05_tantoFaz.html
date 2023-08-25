@@ -13,11 +13,31 @@
     */
 
     //Entrada
+    const refrigerante = 6.19
+    const suco = 9.8
+    const agua = 5
+    const cafe = 10
 
-    
+    const opcao = prompt(`Informe oque deseja comprar. Refrigerante (RF); Suco (SU); Água (AG); Café (CF);`).trim().toUpperCase();
+    const quantia = prompt(`Informe a quantidade que deseja comprar (litros).`).trim();
+
     //Processamento
+    switch (opcao) {
+        case "RF":
+            alert(`O custo é de ${refrigerante * quantia} reais.`);
+            break;
+        case "SU":
+            alert(`O custo é de ${suco * quantia} reais.`);
+            break;
+        case "AG":
+            alert(`O custo é de ${agua * quantia} reais.`);
+            break;
+        case "CF":
+            alert(`O custo é de ${cafe * quantia} reais.`);
+            break;
+    }
 
-    
+
     //Saída
 
 

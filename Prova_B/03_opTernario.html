@@ -13,20 +13,24 @@
     */
 
     //Entrada
+    const dias = Number(prompt(`Informe quantos dias você deseja se ospedar no hotel.`).trim());
 
-    
     //Processamento
+    let mensagemFinal = (dias <= 1) ? `o valor é de 200 reais.`
+        : (dias > 1 && dias <= 3) ? `o valor é de ${dias * 190} reais.`
+            : (dias > 3 && dias <= 7) ? `o valor é de ${dias * 180} reais.`
+                : (dias > 7)`o valor é de ${dias * 170} reais.`
 
-    
     //Saída
+    alert(mensagemFinal);
 
-    
+
     /*
     Para testar:
     Entrada: Quantidade de diárias
     - Informando 1, o custo será de R$ 200,00
     - Informando 2, o custo será de R$ 380,00
-    - Informando 5, o custo será de R$ 800,00
+    - Informando 5, o custo será de R$ 900,00
     - Informando 8, o custo será de R$ 1.280,00
     */
 </script>

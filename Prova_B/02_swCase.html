@@ -10,10 +10,20 @@
     */
 
     //Entrada
-
+    const local = prompt(`Em qual dos locais gostaria de residir? (P)Praia; (F)Fazenda; (U)Urbano;`).trim().toUpperCase();
     
     //Processamento
-
+    switch (local) {
+        case "P":
+            alert(`Litoral.`);
+            break;
+        case "F":
+            alert(`Interior.`);
+            break;
+        case "U":
+            alert(`Cidade..`);
+            break;
+    }
     
     //Saída
 
